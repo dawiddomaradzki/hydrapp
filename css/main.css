@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -311,12 +313,115 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+@-webkit-keyframes backgroundChange {
+  from {
+    background: black; }
+  to {
+    background: white; } }
+
+@keyframes backgroundChange {
+  from {
+    background: black; }
+  to {
+    background: white; } }
+
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: black;
+  background: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  margin: 0 32px;
+  font-family: "Roboto", sans-serif; }
+
+.hydrapp {
+  background: #3767AD;
+  min-width: 375px;
+  min-height: 812px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 8px; }
+  .hydrapp__header {
+    margin-bottom: 48px; }
+    .hydrapp__header--title {
+      font-family: "Lobster Two", cursive;
+      font-size: 48px;
+      margin: 0 0 16px; }
+    .hydrapp__header--icon {
+      opacity: 90%;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto; }
+  .hydrapp__wrapper {
+    margin-bottom: 44px; }
+    .hydrapp__wrapper--number {
+      font-size: 112px;
+      line-height: 131px;
+      margin: 0;
+      position: absolute;
+      top: 430px;
+      left: 0;
+      right: 0;
+      text-align: center; }
+  .hydrapp__AddButton {
+    height: 47px;
+    width: 216px;
+    background: white;
+    border-radius: 4px;
+    border: 0;
+    margin-bottom: 37px;
+    font-size: 18px;
+    line-height: 21px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+    .hydrapp__AddButton:hover {
+      -webkit-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+              transform: scale(1.02); }
+    .hydrapp__AddButton--animated {
+      -webkit-animation: backgroundChange 1s ease-in-out;
+              animation: backgroundChange 1s ease-in-out; }
+  .hydrapp__DeleteButton {
+    height: 23px;
+    width: 184px;
+    background: #3767AD;
+    border: 0;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

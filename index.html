@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hydrapp</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="Hydrapp" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="Hydrapp" />
+  <!-- full url with http(s) ie. https://github.com/dawiddomaradzki?tab=repositories -->
+  <meta property="og:url" content="https://dawiddomaradzki.github.io/hydrapp/" />
+  <!-- full url to the image with http(s) ie. https://github.com/dawiddomaradzki/hydrapp/tree/master/src/assets/img. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://dawiddomaradzki.github.io/hydrapp/" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <section class="hydrapp">
+    <header class="hydrapp__header">
+      <h1 class="hydrapp__header--title">Hydrapp</h1>
+      <img class="hydrapp__header--icon" src="assets/img/icon-128x128.png" alt="water icon">
+    </header>
+    <div class="hydrapp__wrapper">
+      <img class="hydrapp__wrapper--glass" src="assets/img/water-glass.svg" alt="water glass icon">
+      <p class="hydrapp__wrapper--number hydrapp__wrapper--number--js">0</p>
+    </div>
+
+    <button class="hydrapp__AddButton hydrapp__AddButton--animated hydrapp__AddButton--js"
+      aria-label="Dodaj szklankę">dodaj szklankę</button>
+    <button class="hydrapp__DeleteButton hydrapp__DeleteButton" aria-label="Usuń szklankę">usuń szklankę</button>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
