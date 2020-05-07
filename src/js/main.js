@@ -21,8 +21,9 @@ console.log(`Hello world!`);
 var glassNumber = document.querySelector('.hydrapp__wrapper--number--js');
 const addGlass = document.querySelector('.hydrapp__AddButton--js');
 const deleteGlass = document.querySelector('.hydrapp__DeleteButton');
+const key = new Date().toISOString().slice(0, 10); 
 var glass = 0;
-glassNumber.innerHTML = glass;
+glassNumber.innerHTML = localStorage.getItem(key);
 
 
 addGlass.addEventListener('click', (e) => {
@@ -30,7 +31,7 @@ addGlass.addEventListener('click', (e) => {
   const adding = Number(glassNumber.innerHTML) + 1;
   glassNumber.innerHTML = adding;
   console.log(`${adding} szklanka wody`);
-  localStorage.setItem('szklanka wody', adding);
+  localStorage.setItem(key, adding);
 
 });
 
@@ -40,7 +41,7 @@ deleteGlass.addEventListener('click', (e) => {
   if (reduction >= 0) {
     glassNumber.innerHTML = reduction;
     console.log(`${reduction} szklanka wody`);
-    localStorage.setItem('szklanka wody', reduction);
+    localStorage.setItem(key, reduction);
 
   }
 

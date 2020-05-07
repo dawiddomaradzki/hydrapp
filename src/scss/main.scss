@@ -1,6 +1,8 @@
 @import "_normalize";
 @import "_variables";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
+
 
 html {
   box-sizing: border-box;
@@ -34,6 +36,21 @@ body {
   flex-direction: column;
   margin: 8px;
 
+  &__header {
+    margin-bottom: 48px;
+    &--title {
+      font-family: "Lobster Two", cursive;
+      font-size: 48px;
+      margin: 0 0 16px;
+    }
+    &--icon {
+      opacity: 90%;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
   &__wrapper {
     margin-bottom: 44px;
 
@@ -42,7 +59,7 @@ body {
       line-height: 131px;
       margin: 0;
       position: absolute;
-      top: 317px;
+      top: 430px;
       left: 0;
       right: 0;
       text-align: center;
@@ -58,7 +75,11 @@ body {
     margin-bottom: 37px;
     font-size: 18px;
     line-height: 21px;
-  }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform .09s ease-in-out;
+    &:hover {
+    transform: scale(1.009);
+    }
 
   &__DeleteButton {
     height: 23px;
