@@ -2,7 +2,7 @@
 
 # Hydrapp
 
-Zapraszam na moją strone: [simple-editor](https://dawiddomaradzki.github.io/simple-editor/)
+Zapraszam na moją strone: [Hydrapp](https://dawiddomaradzki.github.io/hydrapp)
 
 ## Działanie
 
