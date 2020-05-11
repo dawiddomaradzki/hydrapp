@@ -1,9 +1,9 @@
-# wtf-gulp-starter
+![Hydrapp page screen] (Hydrapp.png)
 
-`npm install -g gulp-cli`
+# Hydrapp
 
-`npm install`
+Zapraszam na moją strone: [simple-editor](https://dawiddomaradzki.github.io/simple-editor/)
 
-`gulp`
+## Działanie
 
-To publish your page using github pages use `npm run deploy`
+Aplikacja do liczenia wypitych szklanek wody dziennie. Dwa przyciski umożliwiają dodanie bądź usunięcie szklanki, a wynik zapisywany jest w local storage. W nowy dzień licznik się zeruje i zliczamy znowu ilość wypitych szklanek zaczynając od 0.
