@@ -1,4 +1,4 @@
-![Hydrapp page screen](Hydrapp.png)
+![Hydrapp page screen](Hydrapp.PNG)
 
 # Hydrapp
 
